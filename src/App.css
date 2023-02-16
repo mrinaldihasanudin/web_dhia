@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.map_page {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+  padding: 0 3%;
+  height: 100vh;
+}
+
+.nav_section {
+  width: 100%;
+  height: 10vh;
+  background-color: #ff0000;
+}
+
+.map_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70vh;
+
+  gap: 1rem;
+}
+
+.card_information {
+  background-color: aqua;
+  width: 350px;
+  height: 70vh;
+}
+
+.contact_section {
+  background-color: aquamarine;
+  width: 100%;
+  height: 10vh;
+}
+
+/* Start Modal */
+.modal_components {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.modal_row {
+  background-color: #fff;
+  width: 500px;
+  height: 300px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* End Modal */
