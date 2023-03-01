@@ -1,10 +1,17 @@
 import React, { useCallback, useEffect, useRef } from "react";
-import kerangkaBerpikir from "./Img/kerangkaBerpikir.png";
-import diagramAlirPenelitian from "./Img/diagramAlirPenelitian.png";
-import kemiringanLereng from "./Img/kemiringanLereng.png";
-import klarifikasiJenisTanah from "./Img/klarifikasiJenisTanah.png";
-import klarifikasiCurahHujan from "./Img/klarifikasiCurahHujan.png";
-import klarifikasiPenggunaanLahan from "./Img/klarifikasiPenggunaanLahan.png";
+import kerangkaBerpikir from "./Img/kerangkaBerpikir.jpg";
+import diagramAlirPenelitian from "./Img/diagramAlirPenelitian.jpg";
+import kemiringanLereng from "./Img/kemiringanLereng.jpg";
+import klarifikasiJenisTanah from "./Img/klarifikasiJenisTanah.jpg";
+import klarifikasiCurahHujan from "./Img/klarifikasiCurahHujan.jpg";
+import klarifikasiPenggunaanLahan from "./Img/klarifikasiPenggunaanLahan.jpg";
+import klasifikasiJarakDariSungai from "./Img/klasifikasiJarakDariSungai.jpg";
+import klasifikasiKetinggian from "./Img/klasifikasiKetinggian.jpg";
+import kerawananBanjir from "./Img/kerawananBanjir.jpg";
+import titikValidasiBanjir from "./Img/titikValidasiBanjir.jpg";
+import simpangLima from "./Img/simpangLima.jpg";
+import kelurahanGayamsari from "./Img/kelurahanGayamsari.jpg";
+import sekitarStTawang from "./Img/sekitarStTawang.jpg";
 
 const Modal = ({ showModal, setShowModal }) => {
   const modalRef = useRef();
@@ -29,6 +36,8 @@ const Modal = ({ showModal, setShowModal }) => {
         <section className="modal_components" ref={modalRef}>
           <div className="modal_row">
             <button onClick={() => setShowModal(false)}>X</button>
+            {/* START : ISI DARI POPUP */}
+            {/* START : ABSTAK */}
             <div style={{ marginBottom: 20 }}>
               <h1>Abstrak </h1>
               <p>
@@ -60,6 +69,9 @@ const Modal = ({ showModal, setShowModal }) => {
                 penanggulangan banjir di Kota Semarang.
               </p>
             </div>
+            {/* END : ABSTAK */}
+
+            {/* START : LATAR BELAKANG */}
             <div style={{ marginBottom: 20 }}>
               <h1>LATAR BELAKANG </h1>
               <p>
@@ -137,6 +149,9 @@ const Modal = ({ showModal, setShowModal }) => {
                 bentuk WebGIS.
               </p>
             </div>
+            {/* END : LATAR BELAKANG */}
+
+            {/* START : RUMUSAN MASALAH */}
             <div style={{ marginBottom: 20 }}>
               <h1>RUMUSAN MASALAH </h1>
               <p>
@@ -154,6 +169,9 @@ const Modal = ({ showModal, setShowModal }) => {
                 </li>
               </ol>
             </div>
+            {/* END : RUMUSAN MASALAH */}
+
+            {/* START : TUJUAN */}
             <div style={{ marginBottom: 20 }}>
               <h1>TUJUAN</h1>
               <p>
@@ -171,6 +189,9 @@ const Modal = ({ showModal, setShowModal }) => {
                 </li>
               </ol>
             </div>
+            {/* END : TUJUAN */}
+
+            {/* START : ALAT DAN DATA */}
             <div style={{ marginBottom: 20 }}>
               <h1>ALAT DAN DATA </h1>
               <ol>
@@ -267,6 +288,9 @@ const Modal = ({ showModal, setShowModal }) => {
                 </table>
               </ol>
             </div>
+            {/* END : ALAT DAN DATA */}
+
+            {/* START : FLOWCHART */}
             <div style={{ marginBottom: 20 }}>
               <h1>FLOWCHART </h1>
               <ol>
@@ -281,6 +305,9 @@ const Modal = ({ showModal, setShowModal }) => {
                 />
               </ol>
             </div>
+            {/* END : FLOWCHART */}
+
+            {/* START : METODE DAN PARAMETER */}
             <div style={{ marginBottom: 20 }}>
               <h1>METODE DAN PARAMETER </h1>
               <p>
@@ -315,7 +342,7 @@ const Modal = ({ showModal, setShowModal }) => {
                       <br />
                       25% - 40% (Curam)
                       <br />
-                      >40% (sangat curam)
+                      {`>`}40% (sangat curam)
                     </td>
                     <td>
                       9<br />
@@ -341,7 +368,7 @@ const Modal = ({ showModal, setShowModal }) => {
                       <br />
                       25% - 40% (Curam)
                       <br />
-                      >40% (sangat curam)
+                      {`>`}40% (sangat curam)
                     </td>
                     <td>
                       9<br />
@@ -367,7 +394,7 @@ const Modal = ({ showModal, setShowModal }) => {
                       <br />
                       25% - 40% (Curam)
                       <br />
-                      >40% (sangat curam)
+                      {`>`}40% (sangat curam)
                     </td>
                     <td>
                       9<br />
@@ -393,7 +420,7 @@ const Modal = ({ showModal, setShowModal }) => {
                       <br />
                       25% - 40% (Curam)
                       <br />
-                      >40% (sangat curam)
+                      {`>`}40% (sangat curam)
                     </td>
                     <td>
                       9<br />
@@ -419,7 +446,7 @@ const Modal = ({ showModal, setShowModal }) => {
                       <br />
                       25% - 40% (Curam)
                       <br />
-                      >40% (sangat curam)
+                      {`>`}40% (sangat curam)
                     </td>
                     <td>
                       9<br />
@@ -445,7 +472,7 @@ const Modal = ({ showModal, setShowModal }) => {
                       <br />
                       25% - 40% (Curam)
                       <br />
-                      >40% (sangat curam)
+                      {`>`}40% (sangat curam)
                     </td>
                     <td>
                       9<br />
@@ -464,6 +491,9 @@ const Modal = ({ showModal, setShowModal }) => {
                 </tbody>
               </table>
             </div>
+            {/* END : METODE DAN PARAMETER */}
+
+            {/* START : HASIL DAN PEMBAHASAN */}
             <div style={{ marginBottom: 20 }}>
               <h1>HASIL DAN PEMBAHASAN </h1>
               <b>A. Hasil dan Analisis Parameter Kelerengan</b>
@@ -497,7 +527,7 @@ const Modal = ({ showModal, setShowModal }) => {
                       <br />
                       25% - 40% (Curam)
                       <br />
-                      >40% (sangat curam)
+                      {`>`}40% (sangat curam)
                     </td>
                     <td>
                       9<br />
@@ -559,7 +589,7 @@ const Modal = ({ showModal, setShowModal }) => {
                       <br />
                       25% - 40% (Curam)
                       <br />
-                      >40% (sangat curam)
+                      {`>`}40% (sangat curam)
                     </td>
                     <td>
                       9<br />
@@ -593,134 +623,419 @@ const Modal = ({ showModal, setShowModal }) => {
                 tanah, tetapi tidak begitu banyak sehingga air tidak tersedia
                 untuk tanaman dalam waktu yang lama.{" "}
               </p>
+              <div>C. Hasil dan Analisis Parameter Curah Hujan</div>
+              <p>
+                Klasifikasi curah hujan diperoleh dari data Climate Hazards
+                Group InfraRed Precipitation with Station Data (CHIRPS) pada
+                Tabel IV-4. Peta curah hujan dibuat berdasarkan klasifikasi
+                dengan lima kelas berdasarkan gabungan data curah hujan dari
+                satelit Tropical Rainfall Measuring Mission (TRMM) dengan data
+                dari lebih dari 20,000 stasiun cuaca di seluruh dunia. Data
+                tersebut kemudian diproses dengan menggunakan teknik interpolasi
+                spasial untuk menghasilkan data curah hujan resolusi tinggi pada
+                skala global.
+              </p>
+              <div>Tabel IV-4 Table Curah Hujan</div>
+              <table>
+                <thead>
+                  <tr>
+                    <td>Parameter</td>
+                    <td>Kelas</td>
+                    <td>Skor</td>
+                    <td>Bobot(%)</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Kelerengan</td>
+                    <td>
+                      0 % - 8% (Datar) <br />
+                      8% - 15% (Landai)
+                      <br />
+                      15% - 25% (Bergelombang)
+                      <br />
+                      25% - 40% (Curam)
+                      <br />
+                      {`>`}40% (sangat curam)
+                    </td>
+                    <td>
+                      9<br />
+                      7<br />
+                      5<br />
+                      3<br />1
+                    </td>
+                    <td>
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                      10
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>
+                Berdasarkan hasil pengolahan dihasilkan peta curah hujan di Kota
+                Semarang seperti pada Gambar IV-3.
+              </p>
+              <img src={klarifikasiCurahHujan} alt="klarifikasiCurahHujan" />
+              <div>Gambar IV-3 Hasil Klasifikasi Curah Hujan</div>
+              <p>
+                Berdasarkan hasil pengolahan dengan data dari CHIRPS dihasilkan
+                bahwa di Kota Semarang pada tahun 2022 dari Bulan Januari hingga
+                Desember memiliki curah hujan yang sangat tinggi pada semua
+                daerah.
+              </p>
+              <div>D. Hasil dan Analisis Parameter Penggunaan Lahan</div>
+              <p>
+                Penggunaan lahan merupakan salah satu parameter yang berperan
+                pada besarnya air limpasan permukaan. Pemanfaatan lahan yang
+                banyak membutuhkan pasokan air atau yang memiliki sumber air
+                menjadi daerah yang cukup rawan terjadi banjir.
+              </p>
+              <div>Tabel IV-5 Tabel Klasifikasi Penggunaan Lahan</div>
+              <table>
+                <thead>
+                  <tr>
+                    <td>Parameter</td>
+                    <td>Kelas</td>
+                    <td>Skor</td>
+                    <td>Bobot(%)</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Kelerengan</td>
+                    <td>
+                      0 % - 8% (Datar) <br />
+                      8% - 15% (Landai)
+                      <br />
+                      15% - 25% (Bergelombang)
+                      <br />
+                      25% - 40% (Curam)
+                      <br />
+                      {`>`}40% (sangat curam)
+                    </td>
+                    <td>
+                      9<br />
+                      7<br />
+                      5<br />
+                      3<br />1
+                    </td>
+                    <td>
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                      10
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div>
+                Berdasarkan hasil pengolahan dihasilkan peta penggunaan lahan di
+                Kota Semarang seperti pada Gambar IV-4.
+              </div>
+              <img
+                src={klarifikasiPenggunaanLahan}
+                alt="klarifikasiPenggunaanLahan"
+              />
+              <div>Gambar IV-4 Hasil Klasifikasi Penggunaan Lahan</div>
+              <p>
+                Berdasarkan hasil pengolahan dengan data dari Land Use Land
+                Cover (LULC) Esri tahun 2021 dihasilkan bahwa penggunaan lahan
+                di Kota Semarang didominasi oleh pemukiman. Apabila dilihat
+                melalui penggunaan lahannya, Kota Semarang cenderung memiliki
+                potensi akan adanya banjir. Ini dikarenakan beberapa tumbuhan
+                semak kurang mampu dalam menahan gerak air pemukaannya,
+                sementara pemukiman biasanya memiliki beban tanah yang cukup
+                besar. Adanya pemukiman yang padat juga dapat menghambat
+                lajurnya air sungai.
+              </p>
+              <div>E. Hasil dan Analisis Parameter Jarak dari Sungai</div>
+              <p>
+                Parameter Buffer atau jarak wilayah terhadap sungai atau badan
+                air merupakan parameter yang menentukan apakah area tersebut
+                berpeluang terjadi banjir atau tidak, semakin dekat jarak
+                wilayah dengan sungai maka potensi banjir di area tersebut juga
+                semakin tinggi.
+              </p>
+              <div>Tabel IV-6 Tabel Klasifikasi Jarak dari Sungai</div>
+              <table>
+                <thead>
+                  <tr>
+                    <td>Parameter</td>
+                    <td>Kelas</td>
+                    <td>Skor</td>
+                    <td>Bobot(%)</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Kelerengan</td>
+                    <td>
+                      0 % - 8% (Datar) <br />
+                      8% - 15% (Landai)
+                      <br />
+                      15% - 25% (Bergelombang)
+                      <br />
+                      25% - 40% (Curam)
+                      <br />
+                      {`>`}40% (sangat curam)
+                    </td>
+                    <td>
+                      9<br />
+                      7<br />
+                      5<br />
+                      3<br />1
+                    </td>
+                    <td>
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                      10
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>
+                Berdasarkan hasil pengolahan dihasilkan peta penggunaan lahan di
+                Kota Semarang seperti pada Gambar IV-5.
+              </p>
+              <img
+                src={klasifikasiJarakDariSungai}
+                alt="klasifikasiJarakDariSungai"
+              />
+              <div>Gambar IV-5 Hasil Klasifikasi Jarak dari Sungai</div>
+              <p>
+                Berdasarkan hasil pengolahan dengan data dari vektor jaringan
+                sungai dengan lebar lebih dari dua meter di Kota Semarang
+                dihasilkan bahwa Kota Semarang mempunyai jaringan sungai dengan
+                lebar {`>`}2m yang cukup panjang.
+              </p>
+              <div>F. Hasil dan Analisis Parameter Ketinggian</div>
+              <p>
+                Ketinggian atau elevasi pada penelitian ini dibuat berdasarkan
+                hasil pengolahan data DEMNAS. Parameter elevasi juga berpengaruh
+                terhadap luasan terjadinya banjir. Ini dikarenakan daerah yang
+                memiliki elevasi rendah cenderung mendapatkan limpasan air saat
+                terjadinya hujan, mengingat sifat air yang mengalir dari daerah
+                yang tinggi ke daerah yang lebih rendah.
+              </p>
+              <div>Tabel IV-7 Tabel Klasifikasi Ketinggian</div>
+              <table>
+                <thead>
+                  <tr>
+                    <td>Parameter</td>
+                    <td>Kelas</td>
+                    <td>Skor</td>
+                    <td>Bobot(%)</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Kelerengan</td>
+                    <td>
+                      0 % - 8% (Datar) <br />
+                      8% - 15% (Landai)
+                      <br />
+                      15% - 25% (Bergelombang)
+                      <br />
+                      25% - 40% (Curam)
+                      <br />
+                      {`>`}40% (sangat curam)
+                    </td>
+                    <td>
+                      9<br />
+                      7<br />
+                      5<br />
+                      3<br />1
+                    </td>
+                    <td>
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                      10
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div>
+                Berdasarkan hasil pengolahan dihasilkan peta ketinggian di Kota
+                Semarang seperti pada Gambar IV-6.
+              </div>
+              <img src={klasifikasiKetinggian} alt="klasifikasiKetinggian" />
+              <div>Gambar IV-6 Hasil Klasifikasi Ketinggian</div>
+              <p>
+                Berdasarkan Gambar IV-6 ketinggian di Kota Semarang mempunyai 5
+                tingkatan ketinggian, daerah dataran tinggi {`>`}300 Meter di
+                atas permukaan laut (mdpl) berada di Kecamatan Gunung Pati.
+                Sedangkan dataran rendah dengan ketinggian {`<`}20m mdpl berada
+                di sebagian Kecamatan Ngaliyan, Semarang Barat, Semarang Utara,
+                Semarang Tengah Semarang Timur, Gayamsari, Candisari,
+                Pedurungan, Genuk, dan sebagian Kecamatan Mranggen.
+              </p>
+              <div>G. Hasil dan Analisis Overlay</div>
+              <img src={kerawananBanjir} alt="kerawananBanjir" />
+              <div>Gambar IV-7 Peta Tingkat Kerawanan Banjir</div>
+              <p>
+                Gambar IV-7 merupakan visualisasi hasil pengolahan dari beberapa
+                parameter untuk menentukan tingkat kerawanan banjir di Kota
+                Semarang. Berdasarkan hasil pengolahan didapatkan beberapa
+                faktor yang menyebabkan terjadinya banjir. Tingkat kerawanan
+                banjir ditentukan dengan semakin besar total skor setiap
+                parameter, maka semakin besar pula tingkat kerawanan banjir di
+                daerah kajian. Setelah dilakukan pengolahan dengan
+                parameter-parameter (Tabel IV-1) dihasilkan bahwa Di Kota
+                Semarang didominasi dengan kawasan yang memiliki tingkat
+                kerawanan banjir yang tinggi, yaitu di daerah sebagian Kecamatan
+                Ngaliyan, Semarang Barat, Semarang Utara, Semarang Tengah
+                Semarang Timur, Gayamsari, Candisari, Pedurungan, Genuk, dan
+                Sebagian Kecamatan Mranggen.
+              </p>
             </div>
-            <div>C. Hasil dan Analisis Parameter Curah Hujan</div>
+            {/* END : HASIL DAN PEMBAHASAN */}
+
+            {/* START : UJI VALIDASI */}
+            <div style={{ marginBottom: 20 }}></div>
+            <h1>UJI VALIDASI</h1>
             <p>
-              Klasifikasi curah hujan diperoleh dari data Climate Hazards Group
-              InfraRed Precipitation with Station Data (CHIRPS) pada Tabel IV-4.
-              Peta curah hujan dibuat berdasarkan klasifikasi dengan lima kelas
-              berdasarkan gabungan data curah hujan dari satelit Tropical
-              Rainfall Measuring Mission (TRMM) dengan data dari lebih dari
-              20,000 stasiun cuaca di seluruh dunia. Data tersebut kemudian
-              diproses dengan menggunakan teknik interpolasi spasial untuk
-              menghasilkan data curah hujan resolusi tinggi pada skala global.
+              Uji validasi dilakukan guna menguatkan hasil penelitian kali ini.
+              Validasi titik sebaran banjir di Kota Semarang menggunakan hasil
+              digitasi dengan memanfaatkan fitur SINI pada platform GEO MAPID.
+              Data-data yang digunakan untuk validasi titik sebaran banjir di
+              Kota Semarang didapatkan melalui portal berita online yang ada di
+              internet. Berikut merupakan hasil digitasi dari data berita di
+              internet terkait banjir di Kota Semarang.
             </p>
-            <div>Tabel IV-4 Table Curah Hujan</div>
-            <table>
-              <thead>
-                <tr>
-                  <td>Parameter</td>
-                  <td>Kelas</td>
-                  <td>Skor</td>
-                  <td>Bobot(%)</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Kelerengan</td>
-                  <td>
-                    0 % - 8% (Datar) <br />
-                    8% - 15% (Landai)
-                    <br />
-                    15% - 25% (Bergelombang)
-                    <br />
-                    25% - 40% (Curam)
-                    <br />
-                    >40% (sangat curam)
-                  </td>
-                  <td>
-                    9<br />
-                    7<br />
-                    5<br />
-                    3<br />1
-                  </td>
-                  <td>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    10
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <img src={titikValidasiBanjir} alt="titikValidasiBanjir" />
+            <div>Gambar IV- Sebaran Titik Validasi Banjir</div>
             <p>
-              Berdasarkan hasil pengolahan dihasilkan peta curah hujan di Kota
-              Semarang seperti pada Gambar IV-3.
+              Dari data sebaran banjir di Kota Semarang, penulis mengambil
+              sebanyak sepuluh sampel kejadian banjir di Kota Semarang dari
+              Bulan November 2022 sampai Bulan Januari 2023. Dari hasil analisis
+              sembilan titik terdapat di daerah dengan tingkat kerawanan tinggi
+              dan satu titik di daerah tingkat kerawanan sedang. Dengan
+              demikian, tingkat kevalidan dari proses validasi sudah cukup
+              akurat dan hasil analisis spasial ini dapat digunakan dalam
+              pemetaan tingkat kerawanan banjir di Kota Semarang.{" "}
             </p>
-            <img src={klarifikasiCurahHujan} alt="klarifikasiCurahHujan" />
-            <div>Gambar IV-3 Hasil Klasifikasi Curah Hujan</div>
             <p>
-              Berdasarkan hasil pengolahan dengan data dari CHIRPS dihasilkan
-              bahwa di Kota Semarang pada tahun 2022 dari Bulan Januari hingga
-              Desember memiliki curah hujan yang sangat tinggi pada semua
-              daerah.
+              Salah satu keunggulan fitur SINI pada platform GEO MAPID adalah
+              dapat menunjukkan data jumlah kepadatan pendudukan dan Point of
+              Interest (POI) di sekitar titik yang dikaji. Berikut merupakan
+              hasil dari fitur SINI di sekitar titik-titik banjir di Kota
+              Semarang:
             </p>
-            <div>D. Hasil dan Analisis Parameter Penggunaan Lahan</div>
+            <img src={simpangLima} alt="simpangLima" />
+            <div>Gambar IV- POI di Simpang Lima</div>
             <p>
-              Penggunaan lahan merupakan salah satu parameter yang berperan pada
-              besarnya air limpasan permukaan. Pemanfaatan lahan yang banyak
-              membutuhkan pasokan air atau yang memiliki sumber air menjadi
-              daerah yang cukup rawan terjadi banjir.
+              Berdasarkan Gambar IV-10 didapatkan informasi mengenai jumlah
+              penduduk di sekitar simpang lima dengan radius satu km2 berjumlah
+              897.278 (orang/km²), didapat pula informasi mengenai POI yang ada
+              di sekitar simpang lima, yaitu 161 cafe dan restoran, 77 ATM dan
+              Bank, 11 Bangunan pemerintahan, 3 fasilitas olahraga, dan 3
+              fasilitas Kesehatan. Berdasarkan hasil dan analisis, daerah
+              Simpang Lima termasuk daerah padat penduduk dan mempunyai
+              perindustrian yang maju, maka kerusakan yang disebabkan oleh
+              banjir akan berdampak sangat serius dan berisiko tinggi,
+              dikarenakan akan menimbulkan kerugian yang tinggi dan berdampak
+              domino ke banyak hal, seperti terganggunya mobilitas warga
+              sekitar, tidak beroperasinya beberapa fasilitas umum, dan
+              lain-lain. Daerah Simpang Lima juga termasuk daerah yang strategis
+              karena berada di pusat kota sehingga penanganan dampak akibat
+              banjir harus dilakukan secara masif oleh pemerintah.
             </p>
-            <div>Tabel IV-5 Tabel Klasifikasi Penggunaan Lahan</div>
-            <table>
-              <thead>
-                <tr>
-                  <td>Parameter</td>
-                  <td>Kelas</td>
-                  <td>Skor</td>
-                  <td>Bobot(%)</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Kelerengan</td>
-                  <td>
-                    0 % - 8% (Datar) <br />
-                    8% - 15% (Landai)
-                    <br />
-                    15% - 25% (Bergelombang)
-                    <br />
-                    25% - 40% (Curam)
-                    <br />
-                    >40% (sangat curam)
-                  </td>
-                  <td>
-                    9<br />
-                    7<br />
-                    5<br />
-                    3<br />1
-                  </td>
-                  <td>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    10
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <div>
-              Berdasarkan hasil pengolahan dihasilkan peta penggunaan lahan di
-              Kota Semarang seperti pada Gambar IV-4.
+            <img src={kelurahanGayamsari} alt="kelurahanGayamsari" />
+            <div>Gambar IV-11 POI di Kelurahan Gayamsari</div>
+            <p>
+              Berdasarkan Gambar IV-11 didapatkan informasi mengenai jumlah
+              penduduk di sekitar Kelurahan Gayamsari dengan radius satu km2
+              berjumlah 997.843 (orang/km²), didapat pula informasi mengenai POI
+              yang ada di sekitar Kelurahan Gayamsari, yaitu 63 tempat ibadah,
+              29 ATM dan Bank, 2 retail, dan 2 tempat pariwisata. Daerah
+              Kelurahan Gayamsari merupakan daerah yang masuk pada tingkat
+              kerawanan tinggi dan merupakan daerah padat pemukiman, sehingga
+              akan banyak pemukiman yang akan terdampak banjir di Kelurahan
+              Gayamsari. Upaya yang dapat dilakukan oleh pemerintah adalah
+              dengan memperbanyak dan menyediakan lahan terbuka untuk membuat
+              lahan hijau untuk penyerapan air. Selain itu perlu tindakan
+              pemberian edukasi ke warga sekitar terkait langkah-langkah apa
+              yang harus dilakukan jika terjadi banjir
+            </p>
+            <img src={sekitarStTawang} alt="sekitarStTawang" />
+            <div>Gambar IV-12 POI di sekitar St. Tawang</div>
+            <p>
+              Berdasarkan Gambar IV-12 didapatkan informasi mengenai jumlah
+              penduduk di sekitar Stasiun Tawang dengan radius satu km2
+              berjumlah 793.728 (orang/km²), didapat pula informasi mengenai POI
+              yang ada di sekitar simpang lima, yaitu 47 ATM dan Bank, 15 cafe
+              dan restoran, 7 bangunan pemerintah, 1 fasilitas Kesehatan.
+              Stasiun Tawang Kota Semarang masuk dalam daerah dengan tingkat
+              kerawanan tinggi. Stasiun Tawang merupakan salah satu fasilitas
+              umum yang sangat vital karena berhubungan dengan transportasi dan
+              mobilitas. Salah satu dampak banjir di Stasiun Tawang adalah
+              kereta api yang akan melintas harus tertahan atau melintas dengan
+              pembatasan kecepatan tertentu demi keselamatan. Akibatnya,
+              beberapa perjalanan kereta api penumpang mengalami keterlambatan.
+            </p>
+            {/* END : UJI VALIDASI */}
+
+            {/* START : SIMPULAN DAN SARAN */}
+            <div style={{ marginBottom: 20 }}>
+              <h1>SIMPULAN DAN SARAN</h1>
+              <div>A. Simpulan</div>
+              <p>
+                Berdasarkan pembahasan dan hasil pengolahan yang telah dilakukan
+                maka dapat disimpulkan sebagai berikut:
+              </p>
+              <ol>
+                <li>
+                  Pengolahan tingkat kerawanan banjir di Kota Semarang dengan
+                  software ArcGIS dengan metode scoring dan pembobotan
+                  menggunakan beberapa data parameter (Tabel IV-1) dan
+                  dihasilkan tingkat kerawanan banjir di Kota Semarang dengan
+                  tiga kelas yaitu, tingkat kerawanana banjir tinggi, tingkat
+                  kerawanana banjir sedang, dan tingkat kerawanana banjir
+                  rendah.
+                </li>
+                <li>
+                  Setelah dilakukan pengolahan dengan parameter-parameter (Tabel
+                  IV-1) dihasilkan bahwa Di Kota Semarang didominasi dengan
+                  kawasan yang memiliki tingkat kerawanan banjir yang tinggi,
+                  yaitu di daerah sebagian Kecamatan Ngaliyan, Semarang Barat,
+                  Semarang Utara, Semarang Tengah, Semarang Timur, Gayamsari,
+                  sebagian Candisari, Pedurungan, Genuk, dan Sebagian Kecamatan
+                  Mranggen.
+                </li>
+              </ol>
+              <div>B. Saran</div>
+              <p>
+                Dari pengolahan yang telah dilakukan penulis, untuk meminimalkan
+                kesalahan dapat disarankan beberapa hal di antaranya:
+              </p>
+              <ol>
+                <li>
+                  Penelitian selanjutnya sebaiknya menggunakan data dengan
+                  resolusi yang lebih tinggi dan data yang terbaru dan
+                  mengkombinasikan dengan data primer yang diambil dari
+                  lapangan.
+                </li>
+                <li>
+                  Pengolahan peta curah hujan masih dilakukan dengan rata-rata
+                  cyrah hujan satu tahun, sebaiknya dilakukan pengolahan peta
+                  curah hujan perbulan.
+                </li>
+                <li>
+                  Sample validasi masih belum dihitung dengan metode statistika,
+                  sehingga perlu dilakukan perhitungan statistika agar dapat
+                  diketahui hasil akurasinya.
+                </li>
+              </ol>
             </div>
-            <img
-              src={klarifikasiPenggunaanLahan}
-              alt="klarifikasiPenggunaanLahan"
-            />
-            <div>Gambar IV-4 Hasil Klasifikasi Penggunaan Lahan</div>
-            <p>
-              Berdasarkan hasil pengolahan dengan data dari Land Use Land Cover
-              (LULC) Esri tahun 2021 dihasilkan bahwa penggunaan lahan di Kota
-              Semarang didominasi oleh pemukiman. Apabila dilihat melalui
-              penggunaan lahannya, Kota Semarang cenderung memiliki potensi akan
-              adanya banjir. Ini dikarenakan beberapa tumbuhan semak kurang
-              mampu dalam menahan gerak air pemukaannya, sementara pemukiman
-              biasanya memiliki beban tanah yang cukup besar. Adanya pemukiman
-              yang padat juga dapat menghambat lajurnya air sungai.
-            </p>
+            {/* END : ISI DARI POPUP */}
           </div>
         </section>
       ) : null}

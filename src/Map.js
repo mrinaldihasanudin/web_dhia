@@ -20,7 +20,7 @@ const Map = ({ filter }) => {
 
   return (
     <MapGL
-      style={{ width: "70vw", height: "70vh" }}
+      style={{ width: "85vw", height: "70vh" }}
       mapStyle="mapbox://styles/mapbox/streets-v12"
       accessToken={token}
       latitude={viewport.latitude}

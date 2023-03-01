@@ -30,17 +30,19 @@ function App() {
         </h1>
         <div className="map_section">
           <div className="card_information">
-            <button onClick={ClickModal}>Profile kota Semarang</button>
-
+            {/* <button onClick={ClickModal}>Profile kota Semarang</button> */}
             <button onClick={() => setFilter("")}>
-              Tingkat Kerawanan Banjir Kota Semarang
+              Semua Tingkat <br /> Kerawanan Banjir Kota Semarang
             </button>
+            <br />
             <button onClick={() => setFilter("Tingkat Kerawanan Redah")}>
               Tingkat Kerawanan Redah
             </button>
+            <br />
             <button onClick={() => setFilter("Tingkat Kerawanan Sedang")}>
               Tingkat Kerawanan Sedang
             </button>
+            <br />
             <button onClick={() => setFilter("Tingkat Kerawanan Tinggi")}>
               Tingkat Kerawanan Tinggi
             </button>
