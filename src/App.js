@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Map from "./Map";
 import Modal from "./Modal";
+import logo from "./Img/LogoUndip.jpg";
 
 function App() {
   const [filter, setFilter] = useState("");
@@ -16,14 +17,24 @@ function App() {
       <Modal showModal={showModal} setShowModal={setShowModal} />
       <section className="map_page">
         <nav className="nav_section">
-          <h1>Judul</h1>
+          <div className="flex_center">
+            <img className="logos" src={logo} alt="Logo Undip" />
+            <p>Universitas Diponegoro</p>
+          </div>
+          <div>
+            <button onClick={ClickModal}>Profile kota Semarang</button>
+          </div>
         </nav>
+        <h1 style={{ textAlign: "center", marginBottom: "2rem" }}>
+          PETA TINGKAT KERAWANAN BANJIR KOTA SEMARANG
+        </h1>
         <div className="map_section">
-          <Map filter={filter} setFilter={setFilter} />
           <div className="card_information">
-            <button onClick={ClickModal}>PopUp</button>
+            <button onClick={ClickModal}>Profile kota Semarang</button>
 
-            <button onClick={() => setFilter("")}>Tampilkan Semua</button>
+            <button onClick={() => setFilter("")}>
+              Tingkat Kerawanan Banjir Kota Semarang
+            </button>
             <button onClick={() => setFilter("Tingkat Kerawanan Redah")}>
               Tingkat Kerawanan Redah
             </button>
@@ -34,8 +45,9 @@ function App() {
               Tingkat Kerawanan Tinggi
             </button>
           </div>
+          <Map filter={filter} setFilter={setFilter} />
         </div>
-        <div className="contact_section"></div>
+        {/* <div className="contact_section"></div> */}
       </section>
     </>
   );
